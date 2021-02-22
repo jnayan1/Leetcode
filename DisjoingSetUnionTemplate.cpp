@@ -7,6 +7,10 @@ int find(int u)
         return representative[u] = find(representative[u]);
 }
 
+/*
+Uses Union by Rank.
+Maintain a "rank" vector that would contain rank of each node
+*/
 void combine (int u, int v)
 {
     u = find(u);
